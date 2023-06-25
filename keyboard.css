@@ -1,0 +1,505 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+body {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+}
+
+.page {
+  margin: 10em auto;
+  width: 63%;
+  height: 42.5%;
+  box-shadow: 1em 1em 1em navajowhite;
+  box-sizing: content-box;
+  padding: 1em;
+  background-color: silver;
+  border-radius: 0.5em;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: repeat(6, 16.5%);
+  grid-template-columns: repeat(15, 6.5%);
+  grid-template-areas:
+    'esc tbar tbar tbar tbar tbar tbar tbar tbar tbar tbar tbar tbar tbar power'
+    'tilda-backtick one two three four five six seven eight nine zero dash plus delete delete'
+    'tab tab q w e r t y u i o p sfb cfs pipe'
+    'caps caps a s d f g h j k l semicolon quotation enter enter'
+    'shift shift z x c v b n m comma dot question-mark shift-2 shift-2 shift-2'
+    'fn control option command space space space space space space command-2 option-2 arrow-keys arrow-keys arrow-keys';
+  justify-content: space-around;
+}
+
+.esc,
+.tbar,
+.power,
+.tilda-backtick,
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.zero,
+.dash,
+.plus,
+.delete,
+.tab,
+.q,
+.w,
+.e,
+.r,
+.t,
+.y,
+.u,
+.i,
+.o,
+.p,
+.sfb,
+.cfs,
+.pipe,
+.caps,
+.a,
+.s,
+.d,
+.f,
+.g,
+.h,
+.j,
+.k,
+.l,
+.semicolon,
+.quotation,
+.enter,
+.shift,
+.z,
+.x,
+.c,
+.v,
+.b,
+.n,
+.m,
+.comma,
+.dot,
+.question-mark,
+.shift,
+.shift-2,
+.fn,
+.control,
+.option,
+.command,
+.option-2,
+.command-2,
+.space,
+.arrow-keys {
+  width: 4em;
+  height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 0.5em;
+  font-size: 1.1em;
+  gap: 1em;
+  align-self: center;
+}
+
+.esc {
+  grid-area: esc;
+  width: 4em;
+  height: 60%;
+}
+
+.tbar {
+  grid-area: tbar;
+  width: 56.4em;
+  height: 60%;
+}
+
+.power {
+  grid-area: power;
+  width: 3em;
+  height: 60%;
+  justify-self: end;
+}
+
+.tilda-backtick {
+  grid-area: tilda-backtick;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.zero {
+  grid-area: zero;
+}
+.dash {
+  grid-area: dash;
+}
+.plus {
+  grid-area: plus;
+}
+.delete {
+  grid-area: delete;
+  width: 8.2em;
+  justify-self: flex-end;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0.5em;
+}
+.tab {
+  width: 8.2em;
+  grid-area: tab;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0.5em;
+}
+.q {
+  grid-area: q;
+}
+.w {
+  grid-area: w;
+}
+.e {
+  grid-area: e;
+}
+.r {
+  grid-area: r;
+}
+.t {
+  grid-area: t;
+}
+.y {
+  grid-area: y;
+}
+.u {
+  grid-area: u;
+}
+.i {
+  grid-area: i;
+}
+.o {
+  grid-area: o;
+}
+.p {
+  grid-area: p;
+}
+.sfb {
+  grid-area: sfb;
+}
+.cfs {
+  grid-area: cfs;
+}
+.pipe {
+  grid-area: pipe;
+}
+.caps {
+  grid-area: caps;
+  width: 8.1em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0.5em;
+}
+.a {
+  grid-area: a;
+}
+.s {
+  grid-area: s;
+}
+.d {
+  grid-area: d;
+}
+.f {
+  grid-area: f;
+}
+.g {
+  grid-area: g;
+}
+.h {
+  grid-area: h;
+}
+.j {
+  grid-area: j;
+}
+.k {
+  grid-area: k;
+}
+.l {
+  grid-area: l;
+}
+.semicolon {
+  grid-area: semicolon;
+}
+.quotation {
+  grid-area: quotation;
+}
+.enter {
+  grid-area: enter;
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0.5em;
+}
+.shift {
+  grid-area: shift;
+  display: flex;
+  justify-content: flex-start;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0.5em;
+  width: 8.2em;
+}
+.shift-2 {
+  grid-area: shift-2;
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0.5em;
+}
+.z {
+  grid-area: z;
+}
+.x {
+  grid-area: x;
+}
+.c {
+  grid-area: c;
+}
+.v {
+  grid-area: v;
+}
+.b {
+  grid-area: b;
+}
+.n {
+  grid-area: n;
+}
+.m {
+  grid-area: m;
+}
+.comma {
+  grid-area: comma;
+}
+.dot {
+  grid-area: dot;
+}
+.question-mark {
+  grid-area: question-mark;
+}
+.fn {
+  grid-area: fn;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0.5em;
+}
+.control {
+  grid-area: control;
+}
+.option {
+  grid-area: option;
+}
+.command {
+  grid-area: command;
+}
+.command-2 {
+  grid-area: command-2;
+}
+.option-2 {
+  grid-area: option-2;
+}
+.space {
+  grid-area: space;
+  width: auto;
+}
+.arrow-keys {
+  grid-area: arrow-keys;
+  width: auto;
+}
+
+.arrow-keys {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    'span1 upkey span2'
+    'leftkey downkey rightkey';
+  justify-content: space-between;
+  align-items: center;
+  height: 3em;
+  gap: 0.2em;
+}
+.upkey {
+  grid-area: upkey;
+}
+
+.downkey {
+  grid-area: downkey;
+}
+
+.leftkey {
+  grid-area: leftkey;
+}
+
+.rightkey {
+  grid-area: rightkey;
+}
+
+.control,
+.command,
+.option,
+.command-2,
+.option-2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0.5em;
+}
+
+.upkey,
+.downkey,
+.rightkey,
+.leftkey {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 96%;
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+.arrow-keys {
+  background-color: transparent;
+  height: 100%;
+}
+
+.tilda-backtick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+.backtick {
+  justify-self: flex-start;
+  align-self: center;
+  font-size: 120%;
+}
+
+.esc:active,
+.tilda-backtick:active,
+.one:active,
+.two:active,
+.three:active,
+.four:active,
+.five:active,
+.six:active,
+.seven:active,
+.eight:active,
+.nine:active,
+.zero:active,
+.dash:active,
+.plus:active,
+.delete:active,
+.tab:active,
+.q:active,
+.w:active,
+.e:active,
+.r:active,
+.t:active,
+.y:active,
+.u:active,
+.i:active,
+.o:active,
+.p:active,
+.sfb:active,
+.cfs:active,
+.pipe:active,
+.caps:active,
+.a:active,
+.s:active,
+.d:active,
+.f:active,
+.g:active,
+.h:active,
+.j:active,
+.k:active,
+.l:active,
+.semicolon:active,
+.quotation:active,
+.enter:active,
+.shift:active,
+.z:active,
+.x:active,
+.c:active,
+.v:active,
+.b:active,
+.n:active,
+.m:active,
+.comma:active,
+.dot:active,
+.question-mark:active,
+.shift:active,
+.shift-2:active,
+.fn:active,
+.control:active,
+.option:active,
+.command:active,
+.option-2:active,
+.command-2:active,
+.space:active,
+.arrow-keys:active {
+  background-color: white;
+  color: black;
+}
+
+.power:active {
+  background: linear-gradient(180deg, rgb(230, 64, 64), black);
+}
