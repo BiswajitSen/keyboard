@@ -16,7 +16,7 @@ body {
 .page {
   margin: 10em auto;
   width: 63%;
-  height: 42.5%;
+  height: 43%;
   box-shadow: 1em 1em 1em navajowhite;
   box-sizing: content-box;
   padding: 1em;
@@ -107,35 +107,35 @@ body {
 .command-2,
 .space,
 .arrow-keys {
-  width: 4em;
-  height: 4em;
+  width: 93%;
+  height: 93%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: black;
   border-radius: 0.5em;
   font-size: 1.1em;
-  gap: 1em;
   align-self: center;
 }
 
 .esc {
   grid-area: esc;
-  width: 4em;
+  width: 93%;
   height: 60%;
 }
 
 .tbar {
   grid-area: tbar;
-  width: 56.4em;
+  width: 101.5%;
   height: 60%;
 }
 
 .power {
   grid-area: power;
-  width: 3em;
+  width: 70%;
   height: 60%;
   justify-self: end;
+  box-sizing: content-box;
 }
 
 .tilda-backtick {
@@ -182,14 +182,13 @@ body {
 }
 .delete {
   grid-area: delete;
-  width: 8.2em;
-  justify-self: flex-end;
+  width: 97%;
   justify-content: flex-end;
   align-items: flex-end;
   padding: 0.5em;
 }
 .tab {
-  width: 8.2em;
+  width: 97%;
   grid-area: tab;
   justify-content: flex-start;
   align-items: flex-end;
@@ -236,7 +235,7 @@ body {
 }
 .caps {
   grid-area: caps;
-  width: 8.1em;
+  width: 97%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -277,7 +276,7 @@ body {
 }
 .enter {
   grid-area: enter;
-  width: auto;
+  width: 97%;
   display: flex;
   justify-content: flex-end;
   justify-content: flex-end;
@@ -291,11 +290,11 @@ body {
   justify-content: flex-start;
   align-items: flex-end;
   padding: 0.5em;
-  width: 8.2em;
+  width: 97%;
 }
 .shift-2 {
   grid-area: shift-2;
-  width: auto;
+  width: 97%;
   display: flex;
   justify-content: flex-end;
   justify-content: flex-end;
